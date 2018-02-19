@@ -1,0 +1,244 @@
+body, body.pushable {
+    background-color: rgb(252, 252, 255) !important;
+    margin-bottom: 0 !important;
+}
+
+pre > code {
+                font-size: 13px;
+            }
+
+div.pusher{
+    min-height: 100% !important;
+}
+
+.ui.secondary.menu {
+    background-color: white !important;
+}
+
+#banner {
+    padding: 30px;
+}
+
+img.avatar{
+    width: 2.5em !important;
+    height: auto !important;
+    /*border-radius: 100% !important;*/
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+
+
+.toast.message{
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    width: 50% !important;
+    left: 25%;
+}
+
+
+
+/**
+ * New size
+ */
+.xmini.image{
+    height: 24px;
+    width: 24px;
+}
+
+
+
+/**
+ * Decoration
+ */
+.shadow {
+    box-shadow: 2px 2px 5px lightgray !important;
+}
+
+
+
+/** 
+ * Thumbnail item
+ */
+.items .item > .image {
+    margin: auto !important;
+}
+
+
+
+/** 
+ * Fixed vertical menu
+ */
+.fixed-margin {
+    top: 50px !important;
+}
+
+
+
+/********/
+.post-content {
+    font-size: 16px;
+}
+
+/**
+    Visibility
+ */
+.force-hidden{
+    display: none !important;
+}
+.force-inline{
+    display: inline-block !important;
+}
+
+
+/**
+    Define margin
+ */
+.no.margin{
+    margin: 0 !important;
+}
+.no-margin{
+    margin: 0 !important;
+}
+.small-margin {
+    margin: 5px 0 !important;
+}
+.normal-margin {
+    margin: 10px 0 !important;
+}
+.big-margin {
+    margin: 15px 0 !important;
+}
+.very.big-margin {
+    margin: 50px 0 !important;
+}
+
+.negative-margin {
+    margin-top: -5px !important;
+}
+.anti-negative-margin {
+    margin-top: 5px !important;
+}
+
+
+
+
+/* Define Padding*/
+.no.padded {
+    padding: 0 !important;
+}
+.no-padded {
+    padding: 0 !important;
+}
+.mini-padded {
+    padding: 5px !important;
+}
+.tiny-padded {
+    padding: 10px !important;
+}
+.large-padded{
+    padding: 15px;
+}
+.big-padded {
+    padding: 20px !important;
+}
+
+/* Padding of button */
+.button.as-label{
+    padding: 5px 7px !important;
+    font-size: 9px !important;
+    font-weight: 700 !important;
+}
+
+
+/* Define text size*/
+.mini-text {
+    font-size: 11px !important;
+}
+.tiny-text {
+    font-size: 12px !important;
+}
+.small-text {
+    font-size: 13px !important;
+}
+.large-text {
+    font-size: 15px !important;
+}
+.big-text{
+    font-size: 17px !important;
+}
+.huge-text {
+    font-size: 20px !important;
+}
+.massive-text {
+    font-size: 25px !important;
+}
+
+
+
+/*
+    Define border
+*/
+.square-border{
+    border-radius: 0 !important;
+}
+
+
+
+/* Define spaced */
+.short-spaced{
+    padding: 0 10px;
+}
+.long-spaced{
+    padding: 0 25px !important;
+}
+
+
+
+/**
+    Text style definition
+ */
+.clear-style {
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+.semibold{
+    font-weight: 600 !important;
+}
+
+
+
+/**
+    Text color
+ */
+.black-text{
+    color: #000 !important;
+}
+.dark-text {
+    color: rgba(0, 0, 0, 0.87) !important;
+}
+.light-text{
+    color: #fff !important;
+}
+.green-text{
+    color: rgb(0, 123, 0) !important;
+}
+.dogderblue-text{
+    color: rgb(0, 90, 185) !important;
+}
+
+
+
+/**
+    Button color
+ */
+.dark-green.button{
+    background-color: #006f00 !important;
+    color: #fff !important;
+}
+.dark-green.button:hover{
+    background-color: #009900 !important;
+}

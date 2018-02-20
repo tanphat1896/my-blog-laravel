@@ -40,6 +40,8 @@ class BlogController extends Controller {
 
 		$relatedPosts = $post->getRelatedPosts();
 
+		$this->postRepository->incrementView($post);
+
 		return view('blog.show', compact('post', 'category', 'comments', 'relatedPosts'));
 	}
 

@@ -53,7 +53,9 @@ class PostController extends Controller {
 		$post = new Post();
 
 		$post->title = $request->get('title');
-		$post->content = $request->get('content');
+		$post->content = empty($request->get('content'))
+			? "----Enter your content----"
+			: $request->get('content');
 		$post->slug = Helper::getSlug($post->title) . "-" . (Post::count() + 1);
 		$post->category_id = $request->get('category');
 		$post->is_draft = $request->get('is_draft');
@@ -119,7 +121,9 @@ class PostController extends Controller {
 		$post = Post::findOrFail($id);
 
 		$post->title = $request->get('title');
-		$post->content = $request->get('content');
+		$post->content = empty($request->get('content'))
+			? "----Enter your content----"
+			: $request->get('content');
 		$post->slug = preg_replace('/-\d+$/', '', $request->get('slug')) . "-{$post->id}";
 		$post->category_id = $request->get('category');
 		$post->is_draft = $request->get('is_draft');

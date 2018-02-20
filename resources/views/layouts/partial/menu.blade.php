@@ -2,7 +2,7 @@
 <div class=" sixteen wide column">
 
     <div class="ui fixed menu square-border no-margin" id="visibility">
-        <a href="/" class="header item"><i class="large  code outline icon"></i>My Blog</a>
+        <a href="/" class="header item"><i class="large  code outline icon"></i>TanPhat Blog</a>
 
         {{-- <a href="/" class="item {{ Request::is('/') ? "active": "" }}">Home</a>
         <a href="/about" class="item {{ Request::is('about') ? "active": "" }}">About</a>

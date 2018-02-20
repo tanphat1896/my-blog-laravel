@@ -9,6 +9,8 @@
 namespace App\Acme\Contract;
 
 
+use App\Post;
+
 interface PostRepositoryInterface {
 	public function find($id);
 
@@ -17,5 +19,7 @@ interface PostRepositoryInterface {
 	public function getPosts($perPage);
 
 	public function getPublishPosts($perPage);
+
+	public function incrementView(Post $post);
 
 }

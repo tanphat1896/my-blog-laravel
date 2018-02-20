@@ -12,24 +12,23 @@
                 <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Tiêu đề</th>
+                    <th>Tiêu đề (Click to edit)</th>
                     <th>Ngày tạo</th>
-                    <th>Bản nháp</th>
+                    <th>Lượt xem</th>
                     <th>Xem như</th>
-                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($posts as $post)
                     <tr>
                         <td>{{ $post->id }}</td>
-                        <td class="left aligned">{{ $post->title }}</td>
-                        <td>{{ $post->created_at->format('d/m/Y\, H:i') }}</td>
-                        <td>
-                            @if ($post->is_draft)
-                                <i class="green check icon"></i>
-                            @endif
+                        <td class="left aligned">
+                            <a href="{{ route('posts.edit', [$post->id]) }}">
+                                {{ $post->title }}
+                            </a>
                         </td>
+                        <td>{{ $post->created_at->format('d/m/Y\, H:i') }}</td>
+                        <td>{{ $post->view_count }}</td>
                         <td class="left aligned">
                             <a href="{{ route('posts.show', [$post->id]) }}" class="ui tiny blue label">Admin</a>
 
@@ -37,15 +36,12 @@
                                 <a href="{{ route('blog.show', [$post->slug]) }}" class="ui tiny teal label">Khách</a>
                             @endif
                         </td>
-                        <td>
-                            <a href="{{ route('posts.edit', [$post->id]) }}" class="ui tiny green label">Sửa</a>
-                        </td>
                     </tr>
                 @endforeach
                 </tbody>
                 <tfoot>
                 <tr>
-                    <th colspan="6" class="right aligned">
+                    <th colspan="5" class="right aligned">
                         {{ $posts->render() }}
                     </th>
                 </tr>

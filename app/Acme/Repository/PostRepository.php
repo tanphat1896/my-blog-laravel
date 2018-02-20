@@ -39,4 +39,10 @@ class PostRepository implements PostRepositoryInterface {
 		return $posts;
 	}
 
+	public function incrementView(Post $post) {
+		if (\Auth::check())
+			return;
+
+		$post->increment('view_count');
+	}
 }

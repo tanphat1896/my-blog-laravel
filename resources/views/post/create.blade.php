@@ -1,12 +1,6 @@
 @extends('layouts.admin')
 
 @push('script')
-    {{-- <script src="{{ asset('tinymce/tinymce.min.js') }}"></script>
-    <script type="text/javascript">
-        tinymce.init({
-            selector: 'textarea'
-        });
-    </script> --}}
     <script type="text/javascript" src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 @endpush
 
@@ -64,13 +58,6 @@
         </div>
     </form>
 @endsection
-
-<div class="ui text container">
-    <div class="ui segment tiny-padded">
-
-    </div>
-
-</div>
 @push('script')
     <script>
         $('#form-create-post').form({
